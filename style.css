@@ -1,0 +1,110 @@
+
+    body {
+    
+      margin:0;
+      padding:0;
+      /* position: absolute; */
+      background:repeat-x #080808fb;
+      }
+  
+      .navbar {
+          background: transparent!important;
+      }
+  
+      .navbar ul li {
+          margin-bottom: 50px;
+      }
+  
+      /* .navbar.container-fluid.navbar-brand.a{
+          margin-bottom: 50px;
+      } */
+
+      .navbar-brand{
+        margin-top: 0px;
+        margin-bottom: 50px;
+      }
+  
+      .services-wrapper {
+          width: 100px;
+          min-height: 100px;
+          padding: 0px;
+          margin: 0px;
+      }
+  
+      .service-container {
+      text-align: center;
+      margin-top: 10px;
+      }
+  
+      .singleservice {
+      display: inline-block;
+      width: 13%;
+      /* height: 50px; */
+      background-color:rgb(75, 73, 73);
+      color:white;
+      color: #b2b2b2;
+      font-family: avenir;
+      text-align: left;
+      margin-bottom: 50px;
+      margin-top: 30px;
+      padding: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      border-bottom: 5px solid gray;
+      border-radius: 5px;
+      }
+  
+      @media (max-width:500px) { 
+    .singleservice {
+      width: 50%;
+    }
+  }
+  
+  h2.servicetitle{
+    font-family: century gothic;
+    font-size: 10pt;
+    color: white;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    
+  }
+
+  h2.subservicetitle{
+    font-family: century gothic;
+    font-size: 8pt;
+    color: white;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    
+  }
+  
+  img.serviceicon {
+    width: 4vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:1px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: .5;
+  }
+
+  .on-bilgi{
+    color:white;
+    font-size: 20pt;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 30px;
+    text-align:justify;
+    font-family:sans-serif;
+  }
+ 
+  
+  
