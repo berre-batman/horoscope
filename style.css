@@ -1,13 +1,12 @@
 
     body {
 
-      background-image: url(starsastronomyastrology.jpg);
+      /* background-image: url(starsastronomyastrology.jpg); */
       background-size: cover;
       
       margin:0;
       padding:0;
-      /* position: absolute; */
-      /* background:repeat-x #080808fb; */
+      background:repeat-x #080808fb; 
       }
   
       .navbar {
@@ -122,18 +121,13 @@
     background-color: black;
 
   }
-  .temizleme{
-    color:white;
-    background-color:transparent;
-    font-size: 25pt;
-  }
+  
 
-  .hesaplama{
-    margin-top: 10px;
-    color:white;
-    background-color:transparent;
-    font-size: 25pt;
-  }
- 
+
+
+
+
+  
+  
   
   
