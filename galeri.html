@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>burceHesapla</title>
+    <title>galeri</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
+
+    
+
+
+    
+    
 </head>
+
 <body>
+
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -54,54 +62,25 @@
         </div>
         </div>
     </nav>
-</div>
+  </div>
+
+  <p style="text-align: center;color: white;font-size: 60px;">Fotoğraf Albümü</p>
+
+
+    <div class="image" style="text-align: center;color: white;margin-top: 80px;">
+      <img src="gezgenler-ve-burclar.jpg" alt="Fotoğraf 1" style="padding-left: 50px;padding-right: 50px; width: 600px;height: 360px;">
+      <img src="horoskop-dogum-haritasi2.jpg" alt="Fotoğraf 2" style="padding-left: 50px;padding-right: 50px;width: 600px;height: 360px; ">
+      <img src="yildiz-haritasi.jpg" alt="Fotoğraf 3" style="padding-left: 50px;padding-right: 50px;width: 600px;height: 360px;margin-top: 50px;">
+    </div>
+
+    
+
+    
+
+
+
+
+
+
 </body>
-
- <h1 style="color: white; font-size: 40pt; text-align: center;padding-top: 15px;">Doğum Burcu Hesaplama</h1>
-
-<form style="color: white;font-size: 30pt;text-align: center;padding-top: 15px;">
-  Lütfen doğum tarihinizi girin:</br></br>
-  <input type="date" id="birthday">
-  <input type="button" value="Hesapla" onclick="calculateSign()">
-</form>
-
-<p id="result"></p>
-
-<script>
-function calculateSign() {
-  // Girilen tarih bilgisini al
-  var birthday = document.getElementById("birthday").value;
-
-  // Tarih nesnesi oluştur
-  var bd = new Date(birthday);
-
-  // Ay ve gün değerlerini al
-  var month = bd.getMonth();
-  var day = bd.getDate();
-
-  // Burç adları ve sembollerini sakla
-  var signs = [
-    { name: "Oğlak", symbol: "♑" },
-    { name: "Kova", symbol: "♒" },
-    { name: "Balık", symbol: "♓" },
-    { name: "Koç", symbol: "♈" },
-    { name: "Boğa", symbol: "♉" },
-    { name: "İkizler", symbol: "♊" },
-    { name: "Yengeç", symbol: "♋" },
-    { name: "Aslan", symbol: "♌" },
-    { name: "Başak", symbol: "♍" },
-    { name: "Terazi", symbol: "♎" },
-    { name: "Akrep", symbol: "♏" },
-    { name: "Yay", symbol: "♐" }
-  ];
-
-  // Doğum burcunu hesapla ve sonuç elementine yazdır
-  var sign = signs[month];
-  document.getElementById("result").innerHTML =
-    "Doğum burcunuz: " + sign.name + " " + sign.symbol;
-}
-</script>
-
-
-
 
