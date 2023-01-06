@@ -9,11 +9,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
+  <!-- navbar -->
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">HOROSCOPE</a>
+      <a class="navbar-brand" href="anasayfa.html">HOROSCOPE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -26,7 +29,7 @@
                 <a class="nav-link" href="burcHesapla.html">BURÇ HESAPLA</a>
             </li>
             <li class="nav-item dropdown px-5 ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="burclar.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 BURÇLAR
                 </a>
                 <div class="dropdown-menu" style="background-color: #080808fb;" aria-labelledby="navbarDropdown">
@@ -54,10 +57,22 @@
         </div>
         </div>
     </nav>
-</div>
+  </div>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="anasayfa.html" style="color: white;">Anasayfa</a></li>
+      <li class="breadcrumb-item"><a href="burcHesapla.html" style="color: white;">Burç Hesapla</a></li>
+    </ol>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+
+
 </body>
 
- <h1 style="color: white; font-size: 40pt; text-align: center;padding-top: 15px;">Doğum Burcu Hesaplama</h1>
+<h1 style="color: white; font-size: 40pt; text-align: center;padding-top: 15px;">Doğum Burcu Hesaplama</h1>
 
 <form style="color: white;font-size: 30pt;text-align: center;padding-top: 15px;">
   Lütfen doğum tarihinizi girin:</br></br>
@@ -65,9 +80,11 @@
   <input type="button" value="Hesapla" onclick="calculateSign()">
 </form>
 
-<p id="result"></p>
+<p id="result" style="color: white;text-align: center;margin-top: 30px;font-size: 25pt;"></p>
 
-<script>
+
+
+<script> 
 function calculateSign() {
   // Girilen tarih bilgisini al
   var birthday = document.getElementById("birthday").value;
@@ -103,5 +120,13 @@ function calculateSign() {
 </script>
 
 
+<footer class="bg-black text-center text-white" style=" position: absolute; bottom: 0; width: 100%; height: 100px; background-color: black">
+  <div class="container p-4"></div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="/anasayfa.html">Berre Batman</a>
+  </div>
+
+</footer>
 
 

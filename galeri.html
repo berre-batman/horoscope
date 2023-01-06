@@ -21,7 +21,7 @@
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">HOROSCOPE</a>
+      <a class="navbar-brand" href="anasayfa.html">HOROSCOPE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,7 +34,7 @@
                 <a class="nav-link" href="burcHesapla.html">BURÇ HESAPLA</a>
             </li>
             <li class="nav-item dropdown px-5 ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="burclar.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 BURÇLAR
                 </a>
                 <div class="dropdown-menu" style="background-color: #080808fb;" aria-labelledby="navbarDropdown">
@@ -64,23 +64,93 @@
     </nav>
   </div>
 
-  <p style="text-align: center;color: white;font-size: 60px;">Fotoğraf Albümü</p>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="anasayfa.html" style="color: white;">Anasayfa</a></li>
+      <li class="breadcrumb-item"><a href="galeri.html" style="color: white;">Galeri</a></li>
+    </ol>
+  </nav>
+
+  <p style="text-align: center;color: white;font-size: 70px;">Fotoğraf Albümü</p>
 
 
-    <div class="image" style="text-align: center;color: white;margin-top: 80px;">
-      <img src="gezgenler-ve-burclar.jpg" alt="Fotoğraf 1" style="padding-left: 50px;padding-right: 50px; width: 600px;height: 360px;">
-      <img src="horoskop-dogum-haritasi2.jpg" alt="Fotoğraf 2" style="padding-left: 50px;padding-right: 50px;width: 600px;height: 360px; ">
-      <img src="yildiz-haritasi.jpg" alt="Fotoğraf 3" style="padding-left: 50px;padding-right: 50px;width: 600px;height: 360px;margin-top: 50px;">
+    <div class="row">
+      <div class="col-md-4" onclick="launchFullscreen(this);"  >
+        <div class="thumbnail">
+          <img src="/image/örnek1.jpg" alt="A descriptive image caption" 
+          style="width: 100%;height: 100%;object-fit: cover">
+          <!-- <p>Bu resim resimler koleksiyonumuzdan biridir.</p> --></div>
+      </div> 
+      <!-- style="text-align: center;color: white;margin-top: 80px;;padding-left: 50px;padding-right: 50px; width: 600px;height: 360px;" -->
+      <div class="col-md-4" onclick="launchFullscreen(this);"  >
+        <div class="thumbnail">
+          <img src="/image/ornek2.jpg" alt="A descriptive image caption" 
+          style="width: 100%;height: 100%;object-fit: cover">
+        </div>
+      </div>
+      <!-- style="text-align: center;color: white;margin-top: 80px;;padding-left: 50px;padding-right: 50px;width: 600px;height: 360px;margin-top: -800px;margin-left: 600px;"  -->
+      <div class="col-md-4" onclick="launchFullscreen(this);">
+        <div class="thumbnail">
+          <img src="/image/yildiz-haritasi.jpg" alt="A descriptive image caption"
+          style="width: 100%;height: 100%;object-fit: cover">
+        </div>  
+      </div>
     </div>
+    <div class="row">
+      <div class="col-md-4" onclick="launchFullscreen(this);" >
+        <div class="thumbnail">
+          <img src="/image/astroloji.jpg" alt="A descriptive image caption"
+          style="width: 100%;height: 100%;object-fit: cover">
+        </div>
+      </div>
+   <!-- style="text-align: center;color: white;margin-top: 80px;;padding-left: 50px;padding-right: 50px;width: 600px;height: 360px;margin-top: 80px;margin-left: 600px;" -->
+      <div class="col-md-4" onclick="launchFullscreen(this);" >
+        <div class="thumbnail">
+          <img src="/image/ornek3.jpg" alt="A descriptive image caption"
+          style="width: 100%;height: 100%;object-fit: cover">
+        </div>
+      </div>
 
+      <div class="col-md-4" onclick="launchFullscreen(this);" >
+        <div class="thumbnail">
+          <img src="/image/ornek4.jpg" alt="A descriptive image caption"
+          style="width: 100%;height: 100%;object-fit: cover">
+        </div>
+      </div>
+    </div>
+    
     
 
+    <script>
+    function launchFullscreen(element) {
+      if(element.requestFullscreen) {
+        element.requestFullscreen();
+      } else if(element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+      } else if(element.webkitRequestFullscreen) {
+        element.webkitRequestFullscreen();
+      } else if(element.msRequestFullscreen) {
+        element.msRequestFullscreen();
+      }
+    }
+    </script>
     
 
 
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
 
 
 
 
 </body>
+
+<footer class="bg-black text-center text-white">
+  <div class="container p-4"></div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="/anasayfa.html">Berre Batman</a>
+  </div>
+
+</footer>
 

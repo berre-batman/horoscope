@@ -7,6 +7,7 @@
     <title>anasayfa</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,7 +15,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">HOROSCOPE</a>
+          <a class="navbar-brand" href="anasayfa.html">HOROSCOPE</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,22 +28,22 @@
                     <a class="nav-link" href="burcHesapla.html">BURÇ HESAPLA</a>
                 </li>
                 <li class="nav-item dropdown px-5 ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="burclar.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     BURÇLAR
                     </a>
                     <div class="dropdown-menu" style="background-color: #080808fb;" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item px-5" style="color:white;" href="#">BAŞAK</a>
-                        <a class="dropdown-item px-5" style="color:white;" href="#">OĞLAK</a>
-                        <a class="dropdown-item px-5" style="color:white;" href="#">KOÇ</a>
-                        <a class="dropdown-item px-5" style="color:white;" href="#">İKİZLER</a>
-                        <a class="dropdown-item px-5" style="color:white;" href="#">KOVA</a>
-                        <a class="dropdown-item px-5" style="color:white;" href="#">BALIK</a>
-                        <a class="dropdown-item px-5" style="color:white;" href="#">YENGEÇ</a>
-                        <a class="dropdown-item px-5" style="color:white;" href="#">ASLAN</a>
-                        <a class="dropdown-item px-5" style="color:white;" href="#">TERAZİ</a>
-                        <a class="dropdown-item px-5" style="color:white;" href="#">AKREP</a>
-                        <a class="dropdown-item px-5" style="color:white;" href="#">YAY</a>
-                        <a class="dropdown-item px-5" style="color:white;" href="#">BOĞA</a>
+                        <a data-burc="basak" class="dropdown-item px-5" style="color:white;">BAŞAK</a>
+                        <a data-burc="oglak" class="dropdown-item px-5" style="color:white;">OĞLAK</a>
+                        <a data-burc="koc" class="dropdown-item px-5" style="color:white;">KOÇ</a>
+                        <a data-burc="ikizler" class="dropdown-item px-5" style="color:white;">İKİZLER</a>
+                        <a data-burc="kova" class="dropdown-item px-5" style="color:white;">KOVA</a>
+                        <a data-burc="balik" class="dropdown-item px-5" style="color:white;">BALIK</a>
+                        <a data-burc="yengec" class="dropdown-item px-5" style="color:white;">YENGEÇ</a>
+                        <a data-burc="aslan" class="dropdown-item px-5" style="color:white;">ASLAN</a>
+                        <a data-burc="terazi" class="dropdown-item px-5" style="color:white;">TERAZİ</a>
+                        <a data-burc="akrep" class="dropdown-item px-5" style="color:white;">AKREP</a>
+                        <a data-burc="yay" class="dropdown-item px-5" style="color:white;">YAY</a>
+                        <a data-burc="boga" class="dropdown-item px-5" style="color:white;">BOĞA</a>
                     </div>
                 </li>
                 <li class="nav-item px-5">
@@ -59,12 +60,23 @@
 
     <!-- breadcrumb oluşturma -->
    
-    <div class="breadcrumbs" style="color: white;float: left;">
+    <!-- <div class="breadcrumbs" style="color: white;float: left;">
         <a href="anasayfa.html" style="color: white;">ana sayfa</a>>
         <a href="burcHesapla.html" style="color: white;">burç hesapla</a>>
-    </div>
+    </div> -->
     
 
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="anasayfa.html" style="color: white;">Anasayfa</a></li>
+          <li class="breadcrumb-item"><a href="burcHesapla.html" style="color: white;">Burç Hesapla</a></li>
+          <li class="breadcrumb-item"><a href="burclar.html" style="color: white;">Burçlar</a></li>
+          <li class="breadcrumb-item"><a href="iletisim.html" style="color: white;">İletişim</a></li>
+          <li class="breadcrumb-item"><a href="galeri.html" style="color: white;">Galeri</a></li>
+
+
+        </ol>
+    </nav>
 
 
    
@@ -154,7 +166,15 @@
             <h2 class="subservicetitle">21 Nisan- 21 Mayıs</h2>
         </div>
     </div>   
-
-
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
 </body>
 
+<footer class="bg-black text-center text-white">
+    <div class="container p-4"></div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="/anasayfa.html">Berre Batman</a>
+    </div>
+  
+</footer>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galeri</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+
+
+<body onload="loadBurclar()">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HOROSCOPE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto px-5">
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="anasayfa.html">ANA SAYFA</a>
+                    </li>
+                <li class="nav-item px-5">
+                    <a class="nav-link" href="burcHesapla.html">BURÇ HESAPLA</a>
+                </li>
+                <li class="nav-item dropdown px-5 ">
+                    <a class="nav-link dropdown-toggle" href="burclar.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    BURÇLAR
+                    </a>
+                    <div class="dropdown-menu" style="background-color: #080808fb;" aria-labelledby="navbarDropdown">
+                        <a data-burc="basak" class="dropdown-item px-5" style="color:white;">BAŞAK</a>
+                        <a data-burc="oglak" class="dropdown-item px-5" style="color:white;">OĞLAK</a>
+                        <a data-burc="koc" class="dropdown-item px-5" style="color:white;">KOÇ</a>
+                        <a data-burc="ikizler" class="dropdown-item px-5" style="color:white;">İKİZLER</a>
+                        <a data-burc="kova" class="dropdown-item px-5" style="color:white;">KOVA</a>
+                        <a data-burc="balik" class="dropdown-item px-5" style="color:white;">BALIK</a>
+                        <a data-burc="yengec" class="dropdown-item px-5" style="color:white;">YENGEÇ</a>
+                        <a data-burc="aslan" class="dropdown-item px-5" style="color:white;">ASLAN</a>
+                        <a data-burc="terazi" class="dropdown-item px-5" style="color:white;">TERAZİ</a>
+                        <a data-burc="akrep" class="dropdown-item px-5" style="color:white;">AKREP</a>
+                        <a data-burc="yay" class="dropdown-item px-5" style="color:white;">YAY</a>
+                        <a data-burc="boga" class="dropdown-item px-5" style="color:white;">BOĞA</a>
+                    </div>
+                </li>
+                <li class="nav-item px-5">
+                    <a class="nav-link" href="iletisim.html">İLETİŞİM</a>
+                </li>
+                <li class="nav-item px-5">
+                    <a class="nav-link" href="galeri.html">GALERİ</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="anasayfa.html" style="color: white;">Anasayfa</a></li>
+          <li class="breadcrumb-item"><a href="burclar.html" style="color: white;">Burçlar</a></li>
+        </ol>
+    </nav>
+
+    <section id="horoscope" style="display: none">
+        <img src="https://bihaftada.com/wp-content/uploads/2017/06/astroloji-burc-yorum-1.jpeg" alt="horoscope_image" srcset="" style="background-repeat: no-repeat; width: 300px;height: 300px; border-radius: 50%;color: white;text-align: center;">
+        <div>
+            <span id="horoscope_range" style="font-size: 40pt;text-align: center;color: white;">
+                Burçlar
+            </span>
+        </div>
+
+        <div>
+            <article id="horoscope_detail">
+                
+            </article>
+        </div>
+    </section>
+
+    <!-- <footer class="bg-black text-center text-white" style=" position: absolute; bottom: 0; width: 100%; height: 100px; background-color: black">
+        <div class="container p-4"></div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="/anasayfa.html">Berre Batman</a>
+        </div>
+    </footer> -->
+    
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+   <script src="./burclar.js"></script>
+</body>
+
