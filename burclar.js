@@ -63,7 +63,6 @@ function fillBurcDetails() {
         $('#horoscope').css("border-radius", '100%');
         $('#horoscope').css("text-align", 'center');
         $('#horoscope').css("color", 'white');
-        $('#horoscope_range').css("fontsize", '40pt');
 
         
 
